@@ -280,6 +280,76 @@ body{background-image:linear-gradient(90deg,rgba(1,7,16,.045),rgba(2,9,19,.055) 
  .event-shell{background-position:58% center!important}
 }
 
+/* Referencia visual aprobada: composición horizontal y fondo industrial continuo */
+html,body{min-height:100%;background-color:#020914}
+body{
+ background-image:linear-gradient(90deg,rgba(1,7,16,.015),rgba(2,9,19,.025) 55%,rgba(2,8,16,.025)),url('assets/fondo-ifema-contenedores.webp?v=reference-exact-20261026')!important;
+ background-position:center center!important;background-size:cover!important;background-repeat:no-repeat!important;background-attachment:fixed!important;
+}
+.wrap{width:88vw!important;max-width:1400px!important;margin-inline:auto!important}
+.top{margin:42px 0 0!important;padding:0!important;min-height:0!important}
+.brand-logo{width:clamp(330px,29vw,440px)!important;height:auto!important}
+.hero-spacer{height:90px!important}
+.event-shell{
+ grid-template-columns:minmax(0,1.08fr) minmax(0,.98fr) minmax(0,1.08fr)!important;
+ height:208px!important;min-height:208px!important;padding:0!important;
+ border:1.5px solid #12caff!important;border-radius:16px!important;
+ background-image:linear-gradient(90deg,rgba(0,6,15,.08),rgba(1,8,17,.04) 62%,rgba(1,8,17,.07)),url('assets/fondo-ifema-contenedores.webp?v=reference-exact-20261026')!important;
+ background-position:center 47%!important;background-size:cover!important;box-shadow:none!important;
+}
+.event-shell:before{background:linear-gradient(90deg,rgba(0,7,16,.07),rgba(1,9,18,.015) 70%,rgba(1,9,18,.06))!important}
+.show-left{padding:22px 32px 19px!important}
+.show-left h2{font-size:clamp(43px,4.5vw,70px)!important}
+.show-facts{padding:18px 28px!important;gap:17px!important;background:transparent!important}
+.show-fact{gap:18px!important}
+.show-fact svg{width:40px!important;height:40px!important;flex-basis:40px!important}
+.show-stand{padding:18px 22px!important;gap:19px!important;background:transparent!important}
+.booth-icon{width:76px!important;height:76px!important;flex-basis:76px!important}
+.cta-label{margin:17px 0 0!important}
+.actions{gap:20px!important;margin-top:0!important}
+.bigbtn{height:130px!important;min-height:130px!important;padding:0 20px!important;gap:0!important;border-radius:15px!important;box-shadow:none!important}
+.brand-link{background-image:linear-gradient(90deg,rgba(1,9,18,.06),rgba(1,10,19,.08)),url('assets/fondo-contenedores-card.webp?v=reference-exact-20261026')!important;background-position:center!important;background-size:cover!important;border-color:#16caff!important}
+.ifema-button{background-image:linear-gradient(90deg,rgba(0,24,91,.10),rgba(0,16,70,.10)),url('assets/fondo-ifema-contenedores.webp?v=reference-exact-20261026')!important;background-position:center!important;background-size:cover!important;border-color:#16caff!important}
+.brand-button-logo,.ifema-button-logo{background:transparent!important}
+.section-head{margin:25px 0 13px!important}
+.section-head h2{font-size:clamp(25px,2.1vw,34px)!important}
+.contacts{gap:20px!important}
+.contact{
+ min-height:225px!important;padding:22px!important;border:1.5px solid #12caff!important;border-radius:15px!important;
+ background:linear-gradient(145deg,rgba(2,13,26,.84),rgba(0,9,20,.86)),url('assets/fondo-contenedores-card.webp?v=reference-exact-20261026') center/cover no-repeat!important;
+ box-shadow:none!important;
+}
+.contact:before{display:none!important}
+.contact:after{opacity:.2!important}
+@media(max-width:900px){
+ .wrap{width:calc(100% - 32px)!important}
+ .top{margin-top:24px!important}
+ .hero-spacer{height:45px!important}
+ .event-shell{height:auto!important;min-height:205px!important;grid-template-columns:1fr 1fr!important}
+ .show-left{grid-row:1 / span 2!important}
+ .show-stand{padding:12px!important}
+ .actions{gap:12px!important}
+ .bigbtn{height:110px!important;min-height:110px!important}
+ .contacts{gap:12px!important}
+ .contact{padding:17px!important}
+}
+@media(max-width:620px){
+ body{background-attachment:scroll!important;background-position:center top!important}
+ .wrap{width:calc(100% - 24px)!important}
+ .brand-logo{width:min(78vw,360px)!important}
+ .top{margin-top:18px!important}
+ .hero-spacer{height:28px!important}
+ .event-shell{grid-template-columns:1fr!important;height:auto!important;min-height:0!important}
+ .show-left{grid-row:auto!important;border-right:0!important;border-bottom:1px solid #16caff!important;padding:20px!important}
+ .show-left h2{font-size:clamp(42px,12vw,62px)!important}
+ .show-facts{padding:16px 20px!important;gap:12px!important}
+ .show-stand{border-top:1px solid #16caff!important;justify-content:flex-start!important;padding:14px 20px!important}
+ .actions{grid-template-columns:1fr!important;gap:12px!important}
+ .bigbtn{height:100px!important;min-height:100px!important}
+ .contacts{grid-template-columns:1fr!important}
+ .contact{min-height:205px!important}
+}
+
 </style>
 </head>
 <body>
