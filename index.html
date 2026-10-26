@@ -145,6 +145,126 @@ body:after{background:repeating-linear-gradient(132deg,transparent 0 100px,#27ba
   .save-arrow{right:16px;bottom:14px}
 }
 
+
+/* Ajustes finales de proporción para igualar la referencia visual */
+.wrap{width:min(1500px,calc(100% - 48px));margin:0 auto}
+.brand-logo{width:clamp(440px,32vw,500px);max-width:100%;height:auto}
+.hero-spacer{height:136px}
+.event-shell{grid-template-columns:minmax(0,1.06fr) minmax(0,.95fr) minmax(0,1.08fr);height:232px;min-height:232px;padding:0}
+.show-left{padding:22px 31px 19px}
+.show-left h2{font-size:clamp(43px,4.5vw,82px);line-height:.88;letter-spacing:-2.8px}
+.show-left h2 span{display:block;white-space:nowrap}
+.show-tagline{font-size:10px;letter-spacing:1.25px}
+.show-facts{gap:17px;padding:18px 29px}
+.show-fact{gap:18px}
+.show-fact svg{width:40px;height:40px;flex-basis:40px}
+.show-fact strong{font-size:26px}
+.show-fact small{font-size:16px}
+.show-stand{gap:19px;padding:18px 22px}
+.booth-icon{width:76px;height:76px;flex-basis:76px}
+.stand-copy>span{font-size:14px;letter-spacing:2px}
+.stand-copy>strong{font-size:clamp(29px,3vw,43px)}
+.cta-label{display:none}
+.actions{grid-template-columns:1fr 1fr;gap:20px;margin-top:19px}
+.bigbtn{height:143px;min-height:143px;padding:0 24px;gap:0;border-radius:15px}
+.brand-button-logo{width:330px;flex:0 0 330px;padding:10px 22px}
+.btncopy{padding:0 24px}
+.btncopy small{font-size:13px;margin:0 0 3px;letter-spacing:1.2px}
+.btncopy strong{font-size:17px}
+.chev{font-size:37px;padding-left:6px}
+.ifema-button-logo{width:245px;flex:0 0 245px;gap:11px;padding:12px 15px}
+.ifema-button-logo i{width:35px;height:75px;flex:0 0 35px}
+.ifema-button-logo strong{font-size:23px}
+.section-head{margin:24px 0 13px}
+.section-head h2{font-size:31px;line-height:1.15;letter-spacing:-.5px}
+.contacts{grid-template-columns:repeat(3,minmax(0,1fr));gap:21px}
+.contact{height:250px;min-height:250px;padding:22px 22px 18px;border-radius:15px;border:1.5px solid #17caff;background:linear-gradient(145deg,rgba(2,15,29,.91),rgba(0,10,21,.91));box-shadow:none}
+.contact:before{display:none}
+.contact:after{right:9px;bottom:6px;width:130px;height:130px;opacity:.11}
+.contact .name{display:flex;align-items:center;gap:16px;margin:0 0 17px;min-height:64px}
+.nicon{width:70px;height:70px;flex:0 0 70px;display:grid;place-items:center;border:2px solid #10c6ff;border-radius:50%;background:rgba(0,75,120,.22);color:#f5fbff;box-shadow:0 0 14px #009fe830}
+.nicon svg{width:32px;height:32px}
+.name h3{font-size:20px;line-height:1.1;margin:0 0 7px;font-weight:900}
+.role{color:#12d1ff;font-size:14px;line-height:1.25;font-weight:800}
+.detail{gap:13px;margin-top:11px;font-size:15px;line-height:1.25}
+.detail-icon{width:22px;flex:0 0 22px;font-size:22px}
+.save-arrow{right:18px;bottom:12px;font-size:31px}
+.footer,.note{display:none}
+@media(max-width:1050px){
+ .wrap{width:calc(100% - 38px)}
+ .brand-logo{width:min(42vw,500px)}
+ .hero-spacer{height:95px}
+ .event-shell{height:220px;min-height:220px;grid-template-columns:minmax(0,1.04fr) minmax(0,.92fr) minmax(0,1fr)}
+ .show-left{padding:18px 20px}
+ .show-left h2{font-size:clamp(45px,5vw,70px);letter-spacing:-2.4px}
+ .show-tagline{font-size:9px;letter-spacing:.75px}
+ .show-facts{padding:14px 17px;gap:12px}
+ .show-fact{gap:10px}
+ .show-fact svg{width:32px;height:32px;flex-basis:32px}
+ .show-fact strong{font-size:22px}
+ .show-fact small{font-size:13px}
+ .show-stand{gap:10px;padding:12px}
+ .booth-icon{width:55px;height:55px;flex-basis:55px}
+ .stand-copy>span{font-size:10px;letter-spacing:1.2px}
+ .stand-copy>strong{font-size:clamp(24px,2.6vw,33px)}
+ .bigbtn{height:125px;min-height:125px}
+ .brand-button-logo{width:200px;flex-basis:200px;padding:10px 14px}
+ .ifema-button-logo{width:175px;flex-basis:175px}
+ .ifema-button-logo strong{font-size:19px}
+ .ifema-button-logo i{width:28px;height:62px;flex-basis:28px}
+ .btncopy{padding:0 15px}
+ .btncopy strong{font-size:14px}
+ .btncopy small{font-size:10px}
+ .contacts{gap:12px}
+ .contact{padding:17px 14px;height:245px;min-height:245px}
+ .contact .name{gap:10px}
+ .nicon{width:52px;height:52px;flex-basis:52px}
+ .name h3{font-size:16px}
+ .role{font-size:11px}
+ .detail{font-size:11px;gap:8px}
+ .detail-icon{font-size:18px}
+}
+@media(max-width:680px){
+ .wrap{width:calc(100% - 24px)}
+ .top{margin:20px 0 0}
+ .brand-logo{width:min(78vw,340px)}
+ .hero-spacer{height:28px}
+ .event-shell{height:auto;min-height:0;display:grid;grid-template-columns:1fr;border-radius:13px}
+ .show-left{padding:18px 19px 14px;border-right:0;border-bottom:1px solid #12caff}
+ .show-eyebrow{font-size:11px;letter-spacing:3px}
+ .show-left h2{font-size:clamp(42px,11vw,56px);letter-spacing:-1.5px}
+ .show-tagline{font-size:9px;white-space:normal}
+ .show-facts{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:14px 17px}
+ .show-fact{gap:8px}
+ .show-fact svg{width:30px;height:30px;flex-basis:30px}
+ .show-fact strong{font-size:18px}
+ .show-fact small{font-size:10px}
+ .show-stand{justify-content:flex-start;padding:13px 18px}
+ .booth-icon{width:51px;height:51px;flex-basis:51px}
+ .stand-copy>span{font-size:10px}
+ .stand-copy>strong{font-size:31px}
+ .actions{grid-template-columns:1fr;gap:11px;margin-top:13px}
+ .bigbtn{height:100px;min-height:100px;padding:0 12px}
+ .brand-button-logo{width:130px;flex-basis:130px;padding:8px}
+ .btncopy{padding:0 12px}
+ .btncopy small{font-size:9px;letter-spacing:.7px}
+ .btncopy strong{font-size:12px}
+ .ifema-button-logo{width:125px;flex-basis:125px;padding:8px;gap:7px}
+ .ifema-button-logo i{width:22px;height:52px;flex-basis:22px}
+ .ifema-button-logo strong{font-size:15px}
+ .chev{font-size:29px}
+ .section-head{margin:22px 0 11px}
+ .section-head h2{font-size:27px}
+ .contacts{grid-template-columns:1fr;gap:12px}
+ .contact{height:auto;min-height:206px;padding:17px 16px 19px}
+ .contact .name{gap:13px;margin-bottom:14px}
+ .nicon{width:54px;height:54px;flex-basis:54px}
+ .name h3{font-size:18px}
+ .role{font-size:12px}
+ .detail{font-size:13px;margin-top:10px;gap:12px}
+ .detail-icon{font-size:20px}
+ .save-arrow{right:16px;bottom:14px}
+}
 </style>
 </head>
 <body>
