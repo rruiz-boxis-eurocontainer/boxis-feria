@@ -265,6 +265,21 @@ body:after{background:repeating-linear-gradient(132deg,transparent 0 100px,#27ba
  .detail-icon{font-size:20px}
  .save-arrow{right:16px;bottom:14px}
 }
+
+/* Ajustes de encuadre para que el diseño conserve sus proporciones en Chrome al 100% */
+.wrap{width:88vw!important;max-width:none!important;margin-left:auto!important;margin-right:auto!important}
+body{background-image:linear-gradient(90deg,rgba(1,7,16,.045),rgba(2,9,19,.055) 55%,rgba(2,8,16,.07)),url('assets/fondo-ifema-contenedores.webp?v=20261026-layout-final')!important;background-position:center center!important;background-size:cover!important;background-attachment:fixed!important;background-repeat:no-repeat!important}
+.event-shell{background-image:linear-gradient(90deg,rgba(1,9,18,.10),rgba(2,11,22,.10) 60%,rgba(2,10,19,.12)),url('assets/fondo-ifema-contenedores.webp?v=20261026-layout-final')!important;background-position:center 46%!important;background-size:cover!important}
+.brand-link{background-image:linear-gradient(90deg,rgba(1,9,18,.18),rgba(1,10,19,.26)),url('assets/fondo-ifema-contenedores.webp?v=20261026-layout-final')!important;background-position:62% 55%!important;background-size:cover!important}
+.ifema-button{background-image:linear-gradient(90deg,rgba(0,24,91,.20),rgba(0,16,70,.24)),url('assets/fondo-ifema-contenedores.webp?v=20261026-layout-final')!important;background-position:20% 52%!important;background-size:cover!important}
+.contact{background:linear-gradient(145deg,rgba(2,15,29,.91),rgba(0,10,21,.92))!important}
+.contact:after{opacity:.12!important}
+@media(max-width:680px){
+ .wrap{width:calc(100% - 24px)!important;max-width:none!important}
+ body{background-attachment:scroll!important;background-position:center top!important}
+ .event-shell{background-position:58% center!important}
+}
+
 </style>
 </head>
 <body>
