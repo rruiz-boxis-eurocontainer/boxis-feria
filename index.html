@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020914">
 <meta name="description" content="BOX Integration Systems en Madrid Tech Show 2026. Encuentra nuestro stand 5C22 y contacta con nuestro equipo.">
-<meta name="build-revision" content="2026-10-27-brand-refresh-v1">
+<meta name="build-revision" content="2026-10-27-transparent-logos-single-sticker-v2">
 <title>BOX Integration Systems · Madrid Tech Show 2026 · Stand 5C22</title>
-<link rel="preload" as="image" href="assets/fondo-ifema-contenedores.webp?v=20261027-contact-card-polish">
+<link rel="preload" as="image" href="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2">
 <style>
 :root{--cyan:#10c8ff;--cyan2:#48d7ff;--navy:#020914;--white:#f6fbff;--muted:#c5d6e2;--edge:#08c7ff}
 *{box-sizing:border-box}
@@ -242,37 +242,60 @@ a{color:inherit}
  .btn-subtitle{font-size:10px;margin-top:4px}
  .chev{flex-basis:30px;width:30px;height:30px;font-size:21px}
 }
+
+/* Ajustes de revisión: tarjeta completa como una sola pegatina y logotipos sin placas de fondo. */
+html,body{height:auto;min-height:100%;overflow-x:hidden}
+.wrap{height:auto;min-height:100svh;min-height:100vh;overflow:visible;padding:clamp(12px,1.8vw,22px) 0 28px}
+.top{flex:0 0 auto;min-height:0;margin:0 0 clamp(12px,1.6vw,18px);align-items:center;overflow:visible}
+.brand-logo{display:block;width:clamp(170px,23vw,285px);max-width:100%;height:auto;max-height:clamp(90px,15vh,135px);object-fit:contain;object-position:left center;transform:none}
+.event-shell{display:block;width:100%;height:auto;flex:0 0 auto;margin:0;padding:0;border:0;border-radius:16px;overflow:hidden;position:relative;isolation:auto;text-decoration:none;background:transparent;box-shadow:0 14px 30px rgba(0,0,0,.24);transition:transform .18s,box-shadow .18s}
+.event-shell:before,.event-shell:after{content:none!important;display:none!important}
+.event-shell:hover{border:0;transform:translateY(-1px);box-shadow:0 18px 36px rgba(0,0,0,.3)}
+.event-sticker-image{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;object-position:center;border:0;border-radius:inherit;background:transparent}
+.actions{flex:initial;margin-top:clamp(12px,1.4vw,18px);margin-bottom:clamp(12px,1.4vw,18px);gap:clamp(12px,1.3vw,18px)}
+.bigbtn{border:1px solid rgba(255,255,255,.16);border-radius:18px;box-shadow:0 14px 30px rgba(0,0,0,.24);padding:0 clamp(12px,1.2vw,18px);gap:clamp(10px,1.2vw,16px)}
+.bigbtn:hover{border-color:rgba(255,255,255,.45);box-shadow:0 18px 38px rgba(0,0,0,.32);transform:translateY(-2px)}
+.brand-link{background:linear-gradient(90deg,rgba(0,7,15,.80),rgba(0,10,19,.49) 58%,rgba(0,8,14,.28)),url("assets/fondo-industrial.webp?v=20261027-sticker-full-v2") center 52%/cover no-repeat #04111e}
+.brand-link:before{background:linear-gradient(90deg,rgba(0,7,15,.18),rgba(0,7,15,.04))}
+.ifema-button{background:linear-gradient(90deg,rgba(1,8,35,.76),rgba(3,15,52,.45) 55%,rgba(1,9,27,.38)),url("https://www.ifema.es/img/xl/imagen-entrada-palacio-congresos-ifema-madrid/ifema_madrid_prensa_041.jpg") center 54%/cover no-repeat #071535}
+.ifema-button:before{background:linear-gradient(90deg,rgba(3,10,41,.22),rgba(3,12,38,.10))}
+.brand-button-logo{display:flex;align-items:center;justify-content:center;width:27%;flex:0 0 27%;height:auto;min-height:0;padding:0;background:transparent;border:0;border-radius:0;overflow:visible}
+.brand-button-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:76px;object-fit:contain;transform:none;filter:drop-shadow(0 2px 5px rgba(0,0,0,.25))}
+.ifema-button-logo{display:flex;align-items:center;justify-content:center;width:27%;max-width:135px;flex:0 0 27%;height:auto;min-height:0;padding:0;gap:0;background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible}
+.ifema-button-logo img{display:block;width:100%;height:auto;max-height:72px;object-fit:contain;background:transparent;filter:drop-shadow(0 2px 5px rgba(0,0,0,.24))}
+.btncopy{padding:0;min-width:0}
+.btn-eyebrow{font-size:clamp(9px,.72vw,11px);letter-spacing:.1em;margin-bottom:6px;color:rgba(255,255,255,.9)}
+.btn-title{font-size:clamp(13px,1.12vw,18px);line-height:1.15}
+.btn-subtitle{font-size:clamp(10px,.78vw,12px);color:rgba(255,255,255,.8)}
+.chev{width:32px;height:32px;flex-basis:32px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);border-radius:50%}
+@media(max-width:1000px) and (min-width:701px){
+ .top{flex-basis:auto}
+ .brand-logo{width:clamp(165px,22vw,235px);max-height:115px}
+ .brand-button-logo,.ifema-button-logo{width:25%;flex-basis:25%}
+ .bigbtn{gap:10px}
+ .btn-title{font-size:clamp(12px,1.25vw,16px)}
+}
+@media(max-width:700px){
+ .wrap{width:calc(100% - 24px);padding:14px 0 24px}
+ .top{min-height:0;margin-bottom:14px;justify-content:flex-start}
+ .brand-logo{width:clamp(160px,48vw,220px);max-height:118px}
+ .event-shell{border-radius:12px}
+ .actions{grid-template-columns:1fr;gap:11px;margin-top:13px;margin-bottom:15px}
+ .bigbtn{height:98px;min-height:98px;padding:0 13px;gap:12px;border-radius:15px}
+ .brand-button-logo,.ifema-button-logo{width:25%;max-width:none;flex-basis:25%;height:auto;min-height:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+ .brand-button-logo img,.ifema-button-logo img{max-height:70px;width:auto;max-width:100%}
+ .btn-eyebrow{font-size:9px;margin-bottom:5px}
+ .btn-title{font-size:14px}
+ .btn-subtitle{font-size:10px;margin-top:4px}
+ .chev{width:30px;height:30px;flex-basis:30px;font-size:20px}
+}
 </style>
 </head>
 <body>
 <main class="wrap">
 <header class="top"><a class="brand" href="https://boxis.es/" aria-label="Ir a la página web de BOX Integration Systems"><img class="brand-logo" src="assets/boxis-logo-white.webp?v=20261027-brand-refresh-v1" alt="BOX Integration Systems"></a></header>
-<a class="event-shell" href="https://www.techshowmadrid.es/expositores" target="_blank" rel="noopener" aria-label="Consultar expositores de Madrid Tech Show e ir al stand 5C22">
-  <div class="event-brand-panel">
-    <img class="event-boxis-logo" src="assets/boxis-logo-white.webp?v=20261027-brand-refresh-v1" alt="BOX Integration Systems">
-    <span class="event-brand-caption">CONNECTING TECHNOLOGY<br>TO REAL SOLUTIONS</span>
-  </div>
-  <div class="event-main">
-    <span class="event-eyebrow">NOS VEMOS EN</span>
-    <h1 class="event-title"><span>MADRID</span><strong>TECH SHOW</strong></h1>
-    <p class="event-tagline">TECHNOLOGY DRIVES A BRIGHTER TOMORROW</p>
-  </div>
-  <div class="event-details">
-    <div class="event-date">
-      <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="2"></rect><path d="M7.5 3v4M16.5 3v4M4 9.5h16M7.5 13h3M7.5 16.5h3M14 13h2.5"></path></svg></span>
-      <span><strong>4–5 NOVIEMBRE</strong><small>2026</small></span>
-    </div>
-    <div class="event-venue">
-      <span class="event-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 10c0 5.2-8 11-8 11S4 15.2 4 10a8 8 0 1 1 16 0Z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>
-      <img class="event-ifema-logo" src="assets/ifema-madrid-logo.jpg?v=20261027-brand-refresh-v1" alt="IFEMA MADRID">
-    </div>
-  </div>
-  <div class="event-stand-panel">
-    <span class="stand-kicker">VISÍTANOS EN NUESTRO</span>
-    <span class="stand-event-name">MADRID TECH SHOW</span>
-    <div class="stand-number"><span>STAND</span><strong>5C22</strong></div>
-    <span class="stand-strap">4–5 NOV · IFEMA MADRID</span>
-  </div>
+<a class="event-shell" href="https://www.techshowmadrid.es/expositores" target="_blank" rel="noopener" aria-label="Madrid Tech Show 2026, 4 y 5 de noviembre, IFEMA Madrid, stand 5C22">
+  <img class="event-sticker-image" src="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2" alt="Nos vemos en Madrid Tech Show, 4–5 noviembre 2026, IFEMA Madrid, stand 5C22" fetchpriority="high">
 </a>
 <nav class="actions" aria-label="Accesos directos">
   <a class="bigbtn brand-link" href="https://boxis.es/" target="_blank" rel="noopener" aria-label="Visitar la web de BOX Integration Systems">
@@ -281,7 +304,7 @@ a{color:inherit}
     <span class="chev" aria-hidden="true">↗</span>
   </a>
   <a class="bigbtn ifema-button" href="https://www.techshowmadrid.es/" target="_blank" rel="noopener" aria-label="Visitar la web oficial de Madrid Tech Show">
-    <span class="ifema-button-logo"><img src="assets/ifema-madrid-logo.jpg?v=20261027-brand-refresh-v1" alt="IFEMA MADRID"></span>
+    <span class="ifema-button-logo"><img src="https://organicreworks.com/img/cms/Logo_IFEMA_Madrid.png" alt="IFEMA MADRID"></span>
     <span class="btncopy"><span class="btn-eyebrow">WEB OFICIAL DEL EVENTO</span><span class="btn-title">MADRID TECH SHOW 2026</span><span class="btn-subtitle">Fechas, ubicación y expositores</span></span>
     <span class="chev" aria-hidden="true">↗</span>
   </a>
