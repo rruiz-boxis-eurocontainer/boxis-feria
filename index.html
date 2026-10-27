@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020914">
 <meta name="description" content="BOX Integration Systems en Madrid Tech Show 2026. Encuentra nuestro stand 5C22 y contacta con nuestro equipo.">
-<meta name="build-revision" content="2026-10-27-logo-safe-area">
+<meta name="build-revision" content="2026-10-27-logo-safe-area-v2">
 <title>BOX Integration Systems · Madrid Tech Show 2026 · Stand 5C22</title>
 <link rel="preload" as="image" href="assets/fondo-ifema-contenedores.webp?v=20261027-contact-card-polish">
 <style>
@@ -144,13 +144,25 @@ a{color:inherit}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
-/* Corrección de área segura de los logotipos: evitar que sus extremos inferiores toquen el recorte del botón. */
-.brand-button-logo{box-sizing:border-box;padding-top:8px;padding-bottom:8px;min-height:0;overflow:visible}
-.brand-button-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;transform:scale(.92);transform-origin:center center;flex:0 1 auto}
-.ifema-button-logo{box-sizing:border-box;padding-top:8px;padding-bottom:8px;min-height:0;overflow:visible;align-items:center}
-.ifema-mark{height:70%;max-height:66px;min-height:34px;align-self:center;clip-path:polygon(45% 2%,98% 14%,62% 48%,84% 92%,18% 92%,26% 52%,2% 23%);transform:scale(.94);transform-origin:center center;margin-block:2px}
-.ifema-wordmark{line-height:1.04;padding-block:3px;overflow:visible}
-.event-brand-logo{transform:scale(.94);transform-origin:center center}
+/* Área de seguridad ampliada: preservar completas las puntas y proporciones de los logotipos. */
+.top{overflow:visible;align-items:flex-start}
+.brand{display:inline-flex;align-items:center;overflow:visible;padding-bottom:10px}
+.brand-logo{display:block;width:clamp(300px,30vw,465px);max-width:100%;height:auto;max-height:calc(20vh - 18px);object-fit:contain;object-position:left center;transform:scale(.88);transform-origin:left center}
+.show-brand{box-sizing:border-box;display:flex;align-items:center;justify-content:center;min-width:0;min-height:0;overflow:visible;padding:8px 8px 14px}
+.event-brand-logo{display:block;width:auto;height:auto;max-width:100%;max-height:calc(100% - 12px);object-fit:contain;transform:scale(.88);transform-origin:center center}
+.brand-button-logo{box-sizing:border-box;padding:10px 1.5vw 16px;min-height:0;overflow:visible;align-items:center;justify-content:center}
+.brand-button-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:calc(100% - 8px);object-fit:contain;transform:scale(.84) translateY(-1px);transform-origin:center center;flex:0 1 auto}
+.ifema-button-logo{box-sizing:border-box;padding:10px 1vw 16px;min-height:0;overflow:visible;align-items:center;justify-content:center}
+.ifema-mark{height:66%;max-height:64px;min-height:32px;align-self:center;transform:scale(.84) translateY(-1px);transform-origin:center center;margin:0}
+.ifema-wordmark{line-height:1.06;padding-block:5px;overflow:visible}
+@media(max-width:700px){
+ .brand-logo{width:clamp(210px,72vw,330px);max-height:none;transform:scale(.92);transform-origin:left center}
+ .brand-button-logo{padding:9px 12px 14px}
+ .brand-button-logo img{max-height:calc(100% - 6px);transform:scale(.82) translateY(-1px)}
+ .ifema-button-logo{padding:9px 10px 14px}
+ .ifema-mark{height:64%;max-height:50px;min-height:30px;transform:scale(.82) translateY(-1px)}
+ .ifema-wordmark{line-height:1.06;padding-block:5px}
+}
 </style>
 </head>
 <body>
