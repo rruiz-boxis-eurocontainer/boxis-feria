@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020914">
 <meta name="description" content="BOX Integration Systems en Madrid Tech Show 2026. Encuentra nuestro stand 5C22 y contacta con nuestro equipo.">
-<meta name="build-revision" content="2026-10-27-contact-card-polish">
+<meta name="build-revision" content="2026-10-27-logo-safe-area">
 <title>BOX Integration Systems · Madrid Tech Show 2026 · Stand 5C22</title>
 <link rel="preload" as="image" href="assets/fondo-ifema-contenedores.webp?v=20261027-contact-card-polish">
 <style>
@@ -143,6 +143,14 @@ a{color:inherit}
  .save-arrow{right:12px;bottom:6px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Corrección de área segura de los logotipos: evitar que sus extremos inferiores toquen el recorte del botón. */
+.brand-button-logo{box-sizing:border-box;padding-top:8px;padding-bottom:8px;min-height:0;overflow:visible}
+.brand-button-logo img{display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;transform:scale(.92);transform-origin:center center;flex:0 1 auto}
+.ifema-button-logo{box-sizing:border-box;padding-top:8px;padding-bottom:8px;min-height:0;overflow:visible;align-items:center}
+.ifema-mark{height:70%;max-height:66px;min-height:34px;align-self:center;clip-path:polygon(45% 2%,98% 14%,62% 48%,84% 92%,18% 92%,26% 52%,2% 23%);transform:scale(.94);transform-origin:center center;margin-block:2px}
+.ifema-wordmark{line-height:1.04;padding-block:3px;overflow:visible}
+.event-brand-logo{transform:scale(.94);transform-origin:center center}
 </style>
 </head>
 <body>
