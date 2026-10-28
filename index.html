@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020914">
 <meta name="description" content="BOX Integration Systems en Madrid Tech Show 2026. Encuentra nuestro stand 5C22 y contacta con nuestro equipo.">
-<meta name="build-revision" content="2026-10-28-sticker-full-width-equal-buttons-v4">
+<meta name="build-revision" content="2026-10-28-shared-width-card-buttons-v5">
 <title>BOX Integration Systems · Madrid Tech Show 2026 · Stand 5C22</title>
 <link rel="preload" as="image" href="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2">
 <style>
@@ -370,11 +370,68 @@ html,body{height:auto;min-height:100%;overflow-x:hidden}
   .btn-subtitle{font-size:9px}
   .chev{width:24px;height:24px;flex-basis:24px;font-size:17px}
 }
+
+/* Contenedor compartido para alinear exactamente tarjeta y accesos por ambos extremos. */
+.campaign-access{
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  box-sizing:border-box;
+  flex:0 0 auto;
+  margin:0;
+  gap:clamp(12px,1.4vw,18px);
+}
+.campaign-access > .event-shell,
+.campaign-access > .actions{
+  width:100% !important;
+  max-width:none !important;
+  min-width:0;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  align-self:stretch;
+  box-sizing:border-box;
+}
+.campaign-access > .event-shell{
+  display:block;
+  flex:0 0 auto;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+}
+.campaign-access .event-sticker-image{
+  display:block;
+  width:100% !important;
+  max-width:none !important;
+  height:auto;
+  object-fit:contain;
+}
+.campaign-access > .actions{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:clamp(12px,1.3vw,18px);
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+}
+.campaign-access > .actions > .bigbtn{
+  display:flex;
+  width:100% !important;
+  max-width:none !important;
+  min-width:0;
+  margin:0;
+  box-sizing:border-box;
+}
+@media(max-width:700px){
+  .campaign-access{gap:10px}
+  .campaign-access > .actions{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+}
 </style>
 </head>
 <body>
 <main class="wrap">
 <header class="top"><a class="brand" href="https://boxis.es/" aria-label="Ir a la página web de BOX Integration Systems"><img class="brand-logo" src="assets/boxis-logo-white.webp?v=20261027-brand-refresh-v1" alt="BOX Integration Systems"></a></header>
+<div class="campaign-access" aria-label="Tarjeta y accesos Madrid Tech Show">
 <a class="event-shell" href="https://www.techshowmadrid.es/expositores" target="_blank" rel="noopener" aria-label="Madrid Tech Show 2026, 4 y 5 de noviembre, IFEMA Madrid, stand 5C22">
   <img class="event-sticker-image" src="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2" alt="Nos vemos en Madrid Tech Show, 4–5 noviembre 2026, IFEMA Madrid, stand 5C22" fetchpriority="high">
 </a>
@@ -390,6 +447,7 @@ html,body{height:auto;min-height:100%;overflow-x:hidden}
     <span class="chev" aria-hidden="true">↗</span>
   </a>
 </nav>
+</div>
 <section aria-labelledby="team-title">
  <div class="section-head"><h2 id="team-title">Nuestro equipo</h2></div>
  <div class="contacts">
