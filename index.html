@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020914">
 <meta name="description" content="BOX Integration Systems en Madrid Tech Show 2026. Encuentra nuestro stand 5C22 y contacta con nuestro equipo.">
-<meta name="build-revision" content="2026-10-28-ifema-full-logo-transparent-v16">
+<meta name="build-revision" content="2026-10-28-ifema-text-match-boxis-logo-centered-v17">
 <title>BOX Integration Systems · Madrid Tech Show 2026 · Stand 5C22</title>
 <link rel="preload" as="image" href="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2">
 <style>
@@ -1163,6 +1163,51 @@ html,body{height:auto;min-height:100%;overflow-x:hidden}
 @media(max-width:700px){
   .ifema-button-logo{width:25%;flex-basis:25%;max-width:none}
   .ifema-button-logo img{width:100%;max-width:112px;max-height:70px}
+}
+
+/* Igualar la tipografía de IFEMA a la del botón de BOXIS y centrar su logotipo verticalmente. */
+.ifema-button .btn-eyebrow{
+  font-size:clamp(9px,.7vw,11px);
+  letter-spacing:.055em;
+  line-height:1.15;
+  margin-bottom:5px;
+}
+.ifema-button .btn-title{
+  font-size:clamp(12px,1.02vw,16px);
+  line-height:1.15;
+  white-space:nowrap;
+}
+.ifema-button .btn-subtitle{
+  display:block;
+  max-width:100%;
+  font-size:clamp(9px,.72vw,11px);
+  line-height:1.24;
+  margin-top:5px;
+}
+.ifema-button .ifema-button-logo{
+  align-self:center;
+  margin-top:auto;
+  margin-bottom:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.ifema-button .ifema-button-logo img{
+  display:block;
+  margin:auto;
+  object-fit:contain;
+  object-position:center;
+}
+@media(max-width:1000px) and (min-width:701px){
+  .ifema-button .btn-eyebrow{font-size:9px;letter-spacing:.055em}
+  .ifema-button .btn-title{font-size:12px;white-space:nowrap}
+  .ifema-button .btn-subtitle{font-size:9px;line-height:1.24}
+}
+@media(max-width:700px){
+  .ifema-button .btn-eyebrow{font-size:8px;letter-spacing:0}
+  .ifema-button .btn-title{font-size:12px;white-space:normal}
+  .ifema-button .btn-subtitle{font-size:9px;line-height:1.2}
+  .ifema-button .ifema-button-logo{align-self:center;margin-top:auto;margin-bottom:auto}
 }
 </style>
 </head>
