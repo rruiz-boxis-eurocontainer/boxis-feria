@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020914">
 <meta name="description" content="BOX Integration Systems en Madrid Tech Show 2026. Encuentra nuestro stand 5C22 y contacta con nuestro equipo.">
-<meta name="build-revision" content="2026-10-28-contact-card-spacing-v8">
+<meta name="build-revision" content="2026-10-28-contact-cards-industrial-watermark-v9">
 <title>BOX Integration Systems · Madrid Tech Show 2026 · Stand 5C22</title>
 <link rel="preload" as="image" href="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2">
 <style>
@@ -767,6 +767,216 @@ html,body{height:auto;min-height:100%;overflow-x:hidden}
   .contact{
     min-height:222px;
     padding:18px 17px 20px;
+  }
+}
+
+/* Contactos integrados en el lenguaje visual de los botones: cristal oscuro, foto industrial y marca de agua BOXIS. */
+.contacts .contact{
+  position:relative;
+  isolation:isolate;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  height:100%;
+  min-width:0;
+  border:1px solid rgba(218,239,251,.20);
+  border-radius:18px;
+  padding:clamp(13px,1.25vh,17px) clamp(14px,1.1vw,18px) clamp(15px,1.4vh,19px);
+  background:linear-gradient(135deg,rgba(1,10,21,.94),rgba(2,15,28,.88));
+  box-shadow:0 14px 28px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.055);
+  overflow:hidden;
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;
+}
+.contacts .contact:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  border-radius:inherit;
+  background:
+    linear-gradient(100deg,rgba(1,9,19,.91) 0%,rgba(2,12,24,.82) 45%,rgba(2,13,26,.69) 100%),
+    url("assets/fondo-industrial.webp?v=20261028-contact-watermark-v9") center 54%/cover no-repeat;
+  opacity:1;
+}
+.contacts .contact:nth-child(2):before{
+  background:
+    linear-gradient(100deg,rgba(1,9,19,.91) 0%,rgba(2,12,24,.82) 45%,rgba(2,13,26,.69) 100%),
+    url("assets/fondo-contenedores-card.webp?v=20261028-contact-watermark-v9") 62% center/cover no-repeat;
+}
+.contacts .contact:nth-child(3):before{
+  background:
+    linear-gradient(100deg,rgba(1,9,19,.91) 0%,rgba(2,12,24,.82) 45%,rgba(2,13,26,.69) 100%),
+    url("assets/fondo-ifema-contenedores.webp?v=20261028-contact-watermark-v9") 72% center/cover no-repeat;
+}
+.contacts .contact:after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:50%;
+  right:12px;
+  width:clamp(126px,12vw,170px);
+  height:clamp(70px,8vh,96px);
+  transform:translateY(-50%);
+  opacity:.17;
+  pointer-events:none;
+  background-image:url("assets/boxis-logo-white.webp?v=20261028-contact-watermark-v9");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.contacts .contact:hover{
+  transform:translateY(-2px);
+  border-color:rgba(72,211,255,.53);
+  box-shadow:0 18px 34px rgba(0,0,0,.30),0 0 22px rgba(0,190,255,.10),inset 0 1px 0 rgba(255,255,255,.08);
+}
+.contacts .contact .name{
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:center;
+  gap:clamp(10px,1vw,14px);
+  margin:0 0 clamp(10px,1vh,13px);
+  padding:0 0 clamp(9px,.9vh,12px);
+  min-height:0;
+  border-bottom:1px solid rgba(218,239,251,.17);
+}
+.contacts .contact .nicon{
+  display:grid;
+  place-items:center;
+  flex:0 0 clamp(44px,5.4vh,56px);
+  width:clamp(44px,5.4vh,56px);
+  height:clamp(44px,5.4vh,56px);
+  border:1px solid rgba(103,221,255,.78);
+  border-radius:50%;
+  color:#f5fcff;
+  background:linear-gradient(145deg,rgba(8,48,71,.68),rgba(3,14,28,.72));
+  box-shadow:inset 0 0 0 3px rgba(65,203,255,.055),0 4px 13px rgba(0,0,0,.16);
+}
+.contacts .contact .nicon svg{
+  width:58%;
+  height:58%;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.65;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.contacts .contact .name h3{
+  margin:0;
+  font-size:clamp(15px,1.22vw,19px);
+  font-weight:850;
+  line-height:1.2;
+  letter-spacing:-.015em;
+}
+.contacts .contact .role{
+  margin-top:5px;
+  color:#51d8ff;
+  font-size:clamp(11px,.9vw,14px);
+  font-weight:750;
+  line-height:1.25;
+}
+.contacts .contact .detail{
+  position:relative;
+  z-index:1;
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  margin:0 0 clamp(7px,.72vh,9px);
+  min-width:0;
+  color:rgba(247,251,255,.94);
+  font-size:clamp(10px,.82vw,13px);
+  line-height:1.28;
+  text-decoration:none;
+  transition:color .16s ease;
+}
+.contacts .contact .detail:hover{color:#74e4ff}
+.contacts .contact .detail-icon{
+  display:grid;
+  place-items:center;
+  flex:0 0 19px;
+  width:19px;
+  min-height:17px;
+  margin-top:0;
+  color:#78dfff;
+}
+.contacts .contact .detail-icon svg{
+  display:block;
+  width:17px;
+  height:17px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+.contacts .contact .detail span:last-child{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+.contacts .contact .detail.hours{margin-bottom:0}
+.contacts .contact .save-arrow{
+  position:absolute;
+  z-index:2;
+  right:12px;
+  bottom:11px;
+  display:grid;
+  place-items:center;
+  width:34px;
+  height:34px;
+  border:1px solid rgba(137,226,255,.35);
+  border-radius:50%;
+  background:linear-gradient(145deg,rgba(15,87,122,.66),rgba(2,19,36,.92));
+  color:#effbff;
+  box-shadow:0 5px 12px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.10);
+  font-size:23px;
+  font-weight:500;
+  line-height:1;
+  cursor:pointer;
+  transition:transform .18s ease,background .18s ease,border-color .18s ease;
+}
+.contacts .contact .save-arrow:hover{
+  transform:translateY(-2px);
+  background:linear-gradient(145deg,rgba(0,160,215,.8),rgba(2,29,51,.95));
+  border-color:rgba(149,235,255,.85);
+}
+@media(min-width:701px){
+  .contacts .contact{padding-right:clamp(14px,1.15vw,19px)}
+  .contacts .contact:after{right:12px;opacity:.16}
+  .contacts .contact .detail.hours{padding-right:35px}
+}
+@media(max-width:700px){
+  .contacts .contact{
+    min-height:232px;
+    height:auto;
+    padding:17px 17px 19px;
+    border-radius:17px;
+  }
+  .contacts .contact:after{
+    width:130px;
+    height:76px;
+    right:12px;
+    top:43%;
+    opacity:.15;
+  }
+  .contacts .contact .name{
+    gap:12px;
+    margin-bottom:12px;
+    padding-bottom:10px;
+  }
+  .contacts .contact .name h3{font-size:16px}
+  .contacts .contact .role{font-size:12px}
+  .contacts .contact .detail{
+    gap:10px;
+    margin-bottom:9px;
+    font-size:12px;
+  }
+  .contacts .contact .detail.hours{padding-right:38px}
+  .contacts .contact .save-arrow{
+    right:12px;
+    bottom:11px;
+    width:32px;
+    height:32px;
   }
 }
 </style>
