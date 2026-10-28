@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020914">
 <meta name="description" content="BOX Integration Systems en Madrid Tech Show 2026. Encuentra nuestro stand 5C22 y contacta con nuestro equipo.">
-<meta name="build-revision" content="2026-10-28-taller-buttons-no-scroll-desktop-v6">
+<meta name="build-revision" content="2026-10-28-balanced-scale-logo-sticker-contacts-v7">
 <title>BOX Integration Systems · Madrid Tech Show 2026 · Stand 5C22</title>
 <link rel="preload" as="image" href="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2">
 <style>
@@ -562,6 +562,165 @@ html,body{height:auto;min-height:100%;overflow-x:hidden}
 @media(max-width:700px){
   html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
   .wrap{height:auto;min-height:100svh;max-height:none;overflow:visible;width:calc(100% - 24px);padding:14px 0 24px}
+}
+
+/* Equilibrio visual: logotipo y contactos más visibles, manteniendo toda la composición en una pantalla grande. */
+@media (min-width:701px) and (min-height:780px){
+  html,body{
+    height:100%;
+    min-height:0;
+    overflow:hidden;
+  }
+  .wrap{
+    width:min(1350px,calc(100% - 48px),calc(220svh - 790px));
+    height:100svh;
+    min-height:0;
+    max-height:100svh;
+    padding:clamp(7px,.9vh,10px) 0;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+  }
+  .top{
+    flex:0 0 clamp(100px,12.5vh,126px);
+    min-height:0;
+    align-items:center;
+    margin:0 0 clamp(4px,.6vh,7px);
+  }
+  .brand-logo{
+    width:clamp(220px,24vw,310px);
+    max-width:100%;
+    max-height:clamp(96px,12vh,122px);
+    height:auto;
+    object-fit:contain;
+    object-position:left center;
+  }
+  .campaign-access{
+    gap:clamp(7px,.9vh,10px);
+    flex:0 0 auto;
+  }
+  .campaign-access > .event-shell{
+    width:100%;
+    max-width:100%;
+    flex:0 0 auto;
+    margin:0;
+  }
+  .campaign-access > .event-shell .event-sticker-image{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+    object-fit:contain;
+  }
+  .campaign-access > .actions{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:clamp(10px,1.1vw,16px);
+    height:clamp(100px,12vh,124px);
+    min-height:clamp(100px,12vh,124px);
+    flex:0 0 clamp(100px,12vh,124px);
+    margin:0;
+  }
+  .campaign-access > .actions > .bigbtn{
+    width:100%;
+    height:100%;
+    min-height:0;
+    padding:0 clamp(12px,1.2vw,18px);
+    gap:clamp(10px,1vw,16px);
+  }
+  .brand-button-logo img,.ifema-button-logo img{
+    max-height:clamp(66px,8.5vh,88px);
+  }
+  .btn-eyebrow{
+    font-size:clamp(10px,.8vw,13px);
+    margin-bottom:6px;
+  }
+  .btn-title{font-size:clamp(14px,1.15vw,18px)}
+  .btn-subtitle{font-size:clamp(11px,.82vw,13px);margin-top:5px}
+  .campaign-access > .actions .chev{
+    width:36px;
+    height:36px;
+    flex-basis:36px;
+    font-size:25px;
+  }
+  .wrap > section{
+    flex:0 0 auto;
+    min-height:0;
+    margin-top:clamp(7px,.9vh,10px);
+  }
+  .section-head{
+    margin:0 0 clamp(5px,.7vh,8px);
+  }
+  .section-head h2{font-size:clamp(24px,2vw,31px)}
+  .contacts{
+    display:grid;
+    width:100%;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    height:clamp(182px,22vh,205px);
+    min-height:0;
+    flex:0 0 clamp(182px,22vh,205px);
+    gap:clamp(10px,1vw,16px);
+  }
+  .contact{
+    height:100%;
+    min-height:0;
+    padding:clamp(9px,1vh,12px) clamp(10px,1vw,15px);
+    border-radius:14px;
+  }
+  .name{
+    gap:clamp(9px,1vw,13px);
+    margin-bottom:clamp(5px,.55vh,7px);
+  }
+  .nicon{
+    width:clamp(42px,5.3vh,54px);
+    height:clamp(42px,5.3vh,54px);
+    flex-basis:clamp(42px,5.3vh,54px);
+  }
+  .name h3{font-size:clamp(15px,1.25vw,19px)}
+  .role{
+    font-size:clamp(11px,.9vw,14px);
+    margin-top:clamp(4px,.4vh,6px);
+  }
+  .detail{
+    gap:8px;
+    margin-bottom:clamp(4px,.45vh,6px);
+    font-size:clamp(10px,.82vw,13px);
+    line-height:1.15;
+  }
+  .detail-icon{width:19px;flex-basis:19px}
+  .save-arrow{right:11px;bottom:4px;font-size:32px}
+}
+/* En pantallas más bajas, se conserva el tamaño legible y se permite desplazamiento si hace falta. */
+@media (min-width:701px) and (max-height:779px){
+  html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
+  .wrap{
+    width:min(1350px,calc(100% - 48px));
+    height:auto;
+    min-height:100svh;
+    max-height:none;
+    overflow:visible;
+    padding:10px 0 16px;
+  }
+  .top{flex:0 0 96px;margin-bottom:7px}
+  .brand-logo{width:230px;max-height:90px}
+  .campaign-access{gap:8px}
+  .campaign-access > .actions{height:100px;min-height:100px;flex-basis:100px}
+  .wrap > section{margin-top:9px}
+  .section-head{margin-bottom:7px}
+  .contacts{height:190px;flex-basis:190px}
+}
+/* En móvil se prioriza una lectura cómoda y tarjetas completas. */
+@media(max-width:700px){
+  html,body{height:auto;min-height:100%;overflow-x:hidden;overflow-y:auto}
+  .wrap{height:auto;min-height:100svh;max-height:none;overflow:visible;width:calc(100% - 24px);padding:14px 0 24px}
+  .top{flex:0 0 auto;min-height:0;margin:0 0 14px}
+  .brand-logo{width:clamp(180px,55vw,250px);max-height:120px}
+  .campaign-access{gap:10px}
+  .campaign-access > .actions{grid-template-columns:1fr;gap:11px;height:auto;min-height:0;flex-basis:auto}
+  .campaign-access > .actions > .bigbtn{height:106px;min-height:106px}
+  .contacts{grid-template-columns:1fr;gap:12px;height:auto;flex-basis:auto}
+  .contact{height:auto;min-height:205px}
 }
 </style>
 </head>
