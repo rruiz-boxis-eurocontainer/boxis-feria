@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020914">
 <meta name="description" content="BOX Integration Systems en Madrid Tech Show 2026. Encuentra nuestro stand 5C22 y contacta con nuestro equipo.">
-<meta name="build-revision" content="2026-10-28-contact-bg-unified-v10">
+<meta name="build-revision" content="2026-10-28-boxis-eurocontainer-energy-background-v11">
 <title>BOX Integration Systems · Madrid Tech Show 2026 · Stand 5C22</title>
 <link rel="preload" as="image" href="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2">
 <style>
@@ -988,6 +988,105 @@ html,body{height:auto;min-height:100%;overflow-x:hidden}
     linear-gradient(100deg,rgba(1,9,19,.91) 0%,rgba(2,12,24,.82) 45%,rgba(2,13,26,.69) 100%),
     url("assets/fondo-contenedores-card.webp?v=20261028-contact-bg-unified-v10") center center/cover no-repeat;
 }
+
+/* Botón corporativo: respaldo energético y proyectos de Eurocontainer, con su logotipo sobre el grupo electrógeno. */
+.brand-link{
+  background:
+    linear-gradient(90deg,rgba(0,5,14,.88) 0%,rgba(0,7,17,.72) 36%,rgba(0,8,18,.27) 66%,rgba(0,8,18,.22) 100%),
+    url("https://eurocontainer.es/wp-content/uploads/2025/12/1_Contenedores_Data_Center.jpeg?v=20261028-boxis-energy-projects") center 52%/cover no-repeat #020914 !important;
+}
+.brand-link:before{
+  background:linear-gradient(90deg,rgba(0,5,14,.12),rgba(0,8,18,.02) 65%,rgba(0,8,18,.05));
+}
+.brand-link:after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  top:50%;
+  right:14%;
+  width:clamp(74px,8vw,100px);
+  height:clamp(31px,4vh,43px);
+  transform:translateY(-50%);
+  border:1px solid rgba(15,34,49,.3);
+  border-radius:3px;
+  background-color:rgba(246,249,250,.94);
+  background-image:url("https://eurocontainer.es/wp-content/uploads/2018/10/eurocontainer_logo240x100.png");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
+  box-shadow:0 3px 8px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.65);
+  opacity:.94;
+  pointer-events:none;
+}
+.brand-link .brand-button-logo,
+.brand-link .btncopy,
+.brand-link > .chev{
+  position:relative;
+  z-index:2;
+}
+.brand-link .brand-button-logo{
+  width:25%;
+  flex-basis:25%;
+  border-right:0;
+  padding:8px 10px;
+}
+.brand-link .btncopy{
+  flex:0 1 43%;
+  max-width:43%;
+  min-width:0;
+  padding:0 clamp(8px,.8vw,13px);
+}
+.brand-link .btn-eyebrow{
+  font-size:clamp(9px,.7vw,11px);
+  letter-spacing:.055em;
+  line-height:1.15;
+  margin-bottom:5px;
+}
+.brand-link .btn-title{
+  font-size:clamp(12px,1.02vw,16px);
+  line-height:1.15;
+  white-space:nowrap;
+}
+.brand-link .btn-subtitle{
+  display:block;
+  max-width:100%;
+  font-size:clamp(9px,.72vw,11px);
+  line-height:1.24;
+  margin-top:5px;
+  color:rgba(244,250,255,.9);
+}
+@media(max-width:1000px) and (min-width:701px){
+  .brand-link .brand-button-logo{width:24%;flex-basis:24%}
+  .brand-link .btncopy{flex-basis:43%;max-width:43%;padding-inline:8px}
+  .brand-link:after{right:12%;width:70px;height:31px}
+  .brand-link .btn-eyebrow{font-size:9px}
+  .brand-link .btn-title{font-size:12px}
+  .brand-link .btn-subtitle{font-size:9px}
+}
+@media(max-width:700px){
+  .brand-link{
+    background-position:center 52%;
+  }
+  .brand-link:after{
+    right:12%;
+    width:clamp(64px,20vw,86px);
+    height:30px;
+    opacity:.9;
+  }
+  .brand-link .brand-button-logo{
+    width:25%;
+    flex-basis:25%;
+    padding:6px;
+  }
+  .brand-link .btncopy{
+    flex:1 1 auto;
+    max-width:none;
+    padding:0 8px;
+  }
+  .brand-link .btn-eyebrow{font-size:8px;letter-spacing:0}
+  .brand-link .btn-title{font-size:12px;white-space:normal}
+  .brand-link .btn-subtitle{font-size:9px;line-height:1.2}
+}
 </style>
 </head>
 <body>
@@ -998,9 +1097,9 @@ html,body{height:auto;min-height:100%;overflow-x:hidden}
   <img class="event-sticker-image" src="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2" alt="Nos vemos en Madrid Tech Show, 4–5 noviembre 2026, IFEMA Madrid, stand 5C22" fetchpriority="high">
 </a>
 <nav class="actions" aria-label="Accesos directos">
-  <a class="bigbtn brand-link" href="https://boxis.es/" target="_blank" rel="noopener" aria-label="Visitar la web de BOX Integration Systems">
+  <a class="bigbtn brand-link" href="https://boxis.es/" target="_blank" rel="noopener" aria-label="Visitar BOX Integration Systems: integración de Data Centers, grupos electrógenos y proyectos industriales junto a Eurocontainer">
     <span class="brand-button-logo"><img src="assets/boxis-logo-white.webp?v=20261027-brand-refresh-v1" alt="BOX Integration Systems"></span>
-    <span class="btncopy"><span class="btn-eyebrow">WEB CORPORATIVA</span><span class="btn-title">BOX INTEGRATION SYSTEMS</span><span class="btn-subtitle">Integración modular industrial</span></span>
+    <span class="btncopy"><span class="btn-eyebrow">INTEGRACIÓN CON EUROCONTAINER</span><span class="btn-title">BOX INTEGRATION SYSTEMS</span><span class="btn-subtitle">Data Centers · grupos electrógenos · proyectos industriales</span></span>
     <span class="chev" aria-hidden="true">↗</span>
   </a>
   <a class="bigbtn ifema-button" href="https://www.techshowmadrid.es/" target="_blank" rel="noopener" aria-label="Visitar la web oficial de Madrid Tech Show">
