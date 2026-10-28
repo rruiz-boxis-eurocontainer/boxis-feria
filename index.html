@@ -1211,16 +1211,36 @@ html,body{height:auto;min-height:100%;overflow-x:hidden}
 }
 
 
-/* Centrado óptico de la flecha de acceso: igual que las flechas de las tarjetas de contacto. */
+/* Las flechas de los botones principales replican el círculo, centrado y animación de los contactos. */
 .campaign-access > .actions > .bigbtn > .chev{
+  position:relative;
   display:grid;
   place-items:center;
   align-self:center;
-  text-align:center;
-  line-height:1;
-  padding:0;
+  flex:0 0 34px;
+  width:34px;
+  height:34px;
+  margin-left:auto;
   margin-top:auto;
   margin-bottom:auto;
+  padding:0;
+  border:1px solid rgba(137,226,255,.35);
+  border-radius:50%;
+  background:linear-gradient(145deg,rgba(15,87,122,.66),rgba(2,19,36,.92));
+  color:#effbff;
+  box-shadow:0 5px 12px rgba(0,0,0,.2),inset 0 1px 0 rgba(255,255,255,.10);
+  font-size:23px;
+  font-weight:500;
+  line-height:1;
+  text-align:center;
+  text-shadow:none;
+  transition:transform .18s ease,background .18s ease,border-color .18s ease;
+}
+.campaign-access > .actions > .bigbtn:hover > .chev,
+.campaign-access > .actions > .bigbtn:focus-visible > .chev{
+  transform:translateY(-2px);
+  background:linear-gradient(145deg,rgba(0,160,215,.8),rgba(2,29,51,.95));
+  border-color:rgba(149,235,255,.85);
 }
 </style>
 </head>
