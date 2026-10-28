@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#020914">
 <meta name="description" content="BOX Integration Systems en Madrid Tech Show 2026. Encuentra nuestro stand 5C22 y contacta con nuestro equipo.">
-<meta name="build-revision" content="2026-10-28-contact-cards-industrial-watermark-v9">
+<meta name="build-revision" content="2026-10-28-contact-bg-unified-v10">
 <title>BOX Integration Systems · Madrid Tech Show 2026 · Stand 5C22</title>
 <link rel="preload" as="image" href="assets/madrid-tech-show-boxis.webp?v=20261027-sticker-full-v2">
 <style>
@@ -978,6 +978,15 @@ html,body{height:auto;min-height:100%;overflow-x:hidden}
     width:32px;
     height:32px;
   }
+}
+
+/* Las tres tarjetas comparten exactamente el mismo fondo industrial de BOXIS/Eurocontainer. */
+.contacts .contact:before,
+.contacts .contact:nth-child(2):before,
+.contacts .contact:nth-child(3):before{
+  background:
+    linear-gradient(100deg,rgba(1,9,19,.91) 0%,rgba(2,12,24,.82) 45%,rgba(2,13,26,.69) 100%),
+    url("assets/fondo-contenedores-card.webp?v=20261028-contact-bg-unified-v10") center center/cover no-repeat;
 }
 </style>
 </head>
